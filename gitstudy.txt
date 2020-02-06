@@ -1,0 +1,20 @@
+git init
+
+git add readme.txt
+git commit -m"评论"
+
+git status
+git diff
+
+git reset --hard HEAD~1或者是版本号
+git log查看提交历史
+git reflog查看历史指令
+
+工作区和暂存区
+stage master head 概念
+
+管理修改 每次修改都git add
+
+如果误操作 在添加到临时工作区里之前可以恢复 添加之后可以从工作区移除 提交之后就用回退就行
+
+添加到工作区且提交之后可以用 git checkout 恢复已删除的文件 或者用git rm彻底删除
