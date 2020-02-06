@@ -18,3 +18,26 @@ stage master head 概念
 如果误操作 在添加到临时工作区里之前可以恢复 添加之后可以从工作区移除 提交之后就用回退就行
 
 添加到工作区且提交之后可以用 git checkout 恢复已删除的文件 或者用git rm彻底删除
+
+git remote add origin git@github.com:michaelliao/learngit.git	添加访问github的账户 名字是origin
+git remote add origin git@gitee.com:HITCRTzyc/gitskills.git
+访问码云的改一下网址
+git remote rm origin 删除这个账户
+git remote -v 查看当前有多少账户
+
+git push origin	master
+git clone https:// 从码云复制就行 可以把数据库的资料下载下来
+
+
+创建、合并分支 创建分支工作比较安全 速度很快
+git branch dev 是创建dev分支 
+git checkout dev 是切换到dev分支  git checkout -b dev 是创建并切换到该分支
+switch -c 是创建并切换到该分支 switch是切换
+git branch 是查看当前分支 
+git branch -d 是删除分支
+在dev分支上操作切换到master上后发现没有操作
+新版git 支持switch命令来切换分支
+
+版本冲突无法合并 解决冲突后才可以合并
+git log -graph 可以看到分支合并图
+
